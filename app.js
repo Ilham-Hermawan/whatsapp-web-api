@@ -11,8 +11,6 @@ const qrcode = require('qrcode');
 const http = require('http');
 const fs = require('fs');
 const { phoneNumberFormatter } = require('./helpers/formatter');
-const axios = require('axios');
-const mime = require('mime-types');
 
 const app = express();
 const server = http.createServer(app);
