@@ -1,5 +1,5 @@
 const port = 3000;
-const api_key = "3012151dfasdas3d2022dad215w";
+const api_key = "keyapikeydukasdas3d2022dad";
 const qrcodeTerimnal = require('qrcode-terminal');
 var checkReadyWhatsapp = false;
 
@@ -20,11 +20,10 @@ const server = http.createServer(app);
 const io = socketIO(server, {
   cors: {
     // origins : ["*"],
-    origin: ["http://localhost","https://localhost","http://localhost:3000","http://wa.mahadigipro.my.id","https://wa.mahadigipro.my.id","http://www.wa.mahadigipro.my.id","https://www.wa.mahadigipro.my.id"],
-    // credentials: true
+    origin: ["http://localhost","https://localhost","http://localhost:3000"],
     handlePreflightRequest: (req, res) => {
       res.writeHead(200, {
-        "Access-Control-Allow-Origin": "http://localhost,https://localhost,http://localhost:3000,http://wa.mahadigipro.my.id,https://wa.mahadigipro.my.id,http://www.wa.mahadigipro.my.id,https://www.wa.mahadigipro.my.id",
+        "Access-Control-Allow-Origin": "http://localhost,https://localhost,http://localhost:3000",
         "Access-Control-Allow-Methods": "GET,POST",
         "Access-Control-Allow-Headers": "Content-Type, Authorization",
         "Access-Control-Allow-Credentials": true
