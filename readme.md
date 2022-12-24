@@ -115,7 +115,11 @@ cd wa
 
 ###wget file menggunkan transfer.sh
 
-wget .....
+wget blabla
+
+unzip blabla.zip
+
+yarn install
 
 ###testing apakah suskses
 
